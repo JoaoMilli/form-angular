@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormComponent } from '../form/form.component';
 
 @Component({
   selector: 'app-stepper',
@@ -10,7 +11,7 @@ export class StepperComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    
+
   }
 
 }
