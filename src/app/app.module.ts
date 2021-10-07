@@ -11,8 +11,12 @@ import {MatButtonModule} from '@angular/material/button';
 import { FormComponent } from './form/form.component';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
-import {MatStepperModule} from '@angular/material/stepper';
-import { StepperComponent } from './stepper/stepper.component';
+import {MatCardModule} from '@angular/material/card';
+import { CardapioComponent } from './cardapio/cardapio.component';
+import { FrontPageComponent } from './front-page/front-page.component';
+import {MatTabsModule} from '@angular/material/tabs';
+import { ItemCardComponent } from './item-card/item-card.component';
+import {MatTableModule} from '@angular/material/table';
 
 
 
@@ -21,7 +25,9 @@ import { StepperComponent } from './stepper/stepper.component';
     AppComponent,
     HeaderComponent,
     FormComponent,
-    StepperComponent
+    CardapioComponent,
+    FrontPageComponent,
+    ItemCardComponent
   ],
   imports: [
     BrowserModule,
@@ -32,7 +38,9 @@ import { StepperComponent } from './stepper/stepper.component';
     MatButtonModule,
     MatFormFieldModule,
     MatInputModule,
-    MatStepperModule
+    MatCardModule,
+    MatTabsModule,
+    MatTableModule
   ],
   providers: [],
   bootstrap: [AppComponent]

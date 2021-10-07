@@ -3,12 +3,12 @@
     <span>Company name</span>
     <mat-icon class="logo">explore</mat-icon>
     <span class="example-spacer"></span>
-    <button mat-icon-button>
-      <mat-icon>favorite</mat-icon>
-    </button>
-    <button mat-icon-button>
-      <mat-icon>share</mat-icon>
-    </button>
+    <a mat-stroked-button routerLink="front-page">Cardapio</a>
+    <a mat-icon-button routerLink="form">
+      <mat-icon>login</mat-icon>
+    </a>
   </mat-toolbar>
+
+  <router-outlet></router-outlet>
 </p>
   

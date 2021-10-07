@@ -1,34 +1,24 @@
 
 <div class="container">
-    <p>
-        <mat-form-field appearance="outline">
-            <mat-label>Outline form field</mat-label>
-            <input matInput placeholder="Placeholder">
-            <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
-        </mat-form-field>
-    </p>
+    <mat-card class="card">
+        <mat-card-title>Login</mat-card-title>
+        <mat-card-subtitle>Entre com email e senha</mat-card-subtitle>
+        <p>
+            <mat-form-field appearance="outline">
+                <mat-label>E-mail</mat-label>
+                <input matInput />
+                <mat-icon matSuffix>email</mat-icon>
+            </mat-form-field>
+        </p>
 
-    <p>
-        <mat-form-field appearance="outline">
-            <mat-label>Outline form field</mat-label>
-            <input matInput placeholder="Placeholder">
-            <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
-        </mat-form-field>
-    </p>
-
-    <p>
-        <mat-form-field appearance="outline">
-            <mat-label>Outline form field</mat-label>
-            <input matInput placeholder="Placeholder">
-            <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
-        </mat-form-field>
-    </p>
-
-    <p>
-        <mat-form-field appearance="outline">
-            <mat-label>Outline form field</mat-label>
-            <input matInput placeholder="Placeholder">
-            <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
-        </mat-form-field>
-    </p>
+        <p>
+            <mat-form-field appearance="outline">
+                <mat-label>Senha</mat-label>
+                <input matInput type="password">
+                <mat-icon matSuffix>lock</mat-icon>
+            </mat-form-field>
+        </p>
+        <button mat-raised-button color="primary">Voltar</button>
+        <button mat-raised-button color="primary">Entrar</button>
+    </mat-card>
 </div>
