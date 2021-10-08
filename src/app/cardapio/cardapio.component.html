@@ -1,26 +1,39 @@
 <div class=container>
     <mat-tab-group>
         <mat-tab label="Tipo1"> 
-            <div fxLayout="row" fxLayoutAlign="space-around stretch" >
-                <table fxFill mat-table [dataSource]="products">
-                    <ng-container matColumnDef="Nome">
-                        <th mat-header-cell *matHeaderCellDef> Nome </th>
-                        <td mat-cell *matCellDef="let p"> {{p.nome}} </td>
-                    </ng-container>
-                    <ng-container matColumnDef="Id">
-                        <th mat-header-cell *matHeaderCellDef> ID </th>
-                        <td mat-cell *matCellDef="let p"> {{p.id}} </td>
-                    </ng-container>
-
-                    <tr mat-header-row *matHeaderRowDef="columns"></tr>
-                    <tr mat-row *matRowDef="let myRowData; columns: columns"></tr>
-                </table>
+            <ul>
+                <li *ngFor = "let p of products">
+                    <app-item-card [produto]="p"></app-item-card>
+                    <div class="btnContainer">
+                        <button mat-flat-button color="primary">Informações</button>
+                        <button mat-flat-button color="primary" (click)="addProdutoCarrinho(p)">Adicionar no carrinho</button>
+                        <button mat-flat-button color="warn" (click)="removeProduto(p)">Remover</button>
+                    </div>
+                </li>
+            </ul>
+            <div class="btnContainer">
+                <button mat-fab color="primary" routerLink="/add-product">
+                    <mat-icon>add</mat-icon>
+                </button>
             </div>
         </mat-tab>
         <mat-tab label="Tipo2">
-            <app-item-card></app-item-card>
-            <app-item-card></app-item-card>
-            <app-item-card></app-item-card>
+            <ul>
+                <li *ngFor = "let p of products">
+                    <app-item-card [produto]="p"></app-item-card>
+                    <div class="btnContainer">
+                        <button mat-flat-button color="primary">Informações</button>
+                        <button mat-flat-button color="primary" (click)="addProdutoCarrinho(p)">Adicionar no carrinho</button>
+                        <button mat-flat-button color="warn" (click)="removeProduto(p)">Remover</button>
+                    </div>
+                </li>
+            </ul>
+
+            <div class="btnContainer">
+                <button mat-raised-button color="primary" routerLink="/add-product">Adicionar</button>
+            </div>
+            
+            
         </mat-tab>
         <mat-tab label="Tipo3"> Tipo3 </mat-tab>
         <mat-tab label="Tipo4"> Tipo4 </mat-tab>

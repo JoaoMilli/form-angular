@@ -1,0 +1,31 @@
+<div class="container">
+    <mat-card class="card">
+        <mat-card-title>Adicionar Produto</mat-card-title>
+        <mat-card-subtitle>Entre o nome e id do produto</mat-card-subtitle>
+        <p>
+            <mat-form-field appearance="outline">
+                <mat-label>Nome</mat-label>
+                <input matInput [(ngModel)]="name"/>
+                <mat-icon matSuffix>shopping_cart</mat-icon>
+            </mat-form-field>
+        </p>
+
+        <p>
+            <mat-form-field appearance="outline">
+                <mat-label>Tipo</mat-label>
+                <input matInput [(ngModel)] ="type" type="number">
+                <mat-icon matSuffix>drafts</mat-icon>
+            </mat-form-field>
+        </p>
+
+        <p>
+            <mat-form-field appearance="outline">
+                <mat-label>ID</mat-label>
+                <input matInput [(ngModel)]="ID" type="number">
+                <mat-icon matSuffix>qr_code</mat-icon>
+            </mat-form-field>
+        </p>
+        <button mat-raised-button color="primary" routerLink="/front-page">Voltar</button>
+        <button mat-raised-button color="primary" (click) = "addProduto()" routerLink="/front-page">Adicionar</button>
+    </mat-card>
+</div>

@@ -1,0 +1,6 @@
+<ul>
+    <li *ngFor = "let p of listaCarrinho">
+        <app-item-card [produto]="p.produto"></app-item-card>
+        <button mat-raised-button color="primary" (click)="removeProdutoCarrinho(p)">Remover do carrinho</button>
+    </li>
+</ul>

@@ -17,7 +17,9 @@ import { FrontPageComponent } from './front-page/front-page.component';
 import {MatTabsModule} from '@angular/material/tabs';
 import { ItemCardComponent } from './item-card/item-card.component';
 import {MatTableModule} from '@angular/material/table';
-
+import { CarrinhoComponent } from './carrinho/carrinho.component';
+import { FormsModule } from '@angular/forms';
+import { AddProductComponent } from './add-product/add-product.component';
 
 
 @NgModule({
@@ -27,7 +29,9 @@ import {MatTableModule} from '@angular/material/table';
     FormComponent,
     CardapioComponent,
     FrontPageComponent,
-    ItemCardComponent
+    ItemCardComponent,
+    CarrinhoComponent,
+    AddProductComponent,
   ],
   imports: [
     BrowserModule,
@@ -40,7 +44,8 @@ import {MatTableModule} from '@angular/material/table';
     MatInputModule,
     MatCardModule,
     MatTabsModule,
-    MatTableModule
+    MatTableModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
